@@ -1,0 +1,48 @@
+C51 COMPILER V9.60.0.0   DCPROG                                                            01/03/2023 13:02:38 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE DCPROG
+OBJECT MODULE PLACED IN .\Objects\dcprog.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE dcprog.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\dc
+                    -prog.lst) TABS(2) OBJECT(.\Objects\dcprog.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          sbit motp=P1^0;
+   3          sbit motn=P1^1;
+   4          
+   5          sbit motp2=P1^2;
+   6          sbit motn2=P1^3;
+   7          
+   8          void main(){
+   9   1        unsigned int i;
+  10   1        motn=motp=motp2=motn2=0;
+  11   1      
+  12   1        while(1){
+  13   2          motp=1;
+  14   2          motn=0;
+  15   2          motp2=0;
+  16   2          motn2=1;
+  17   2          for(i=0; i<50000; i++){}
+  18   2          motp=0;
+  19   2          motn=1;
+  20   2          motp2=1;
+  21   2          motn2=0;
+  22   2          for(i=0; i<50000; i++){}  
+  23   2        }
+  24   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     76    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

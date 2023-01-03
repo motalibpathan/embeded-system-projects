@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\dcprog.obj" 
+TO ".\Objects\dcmotorproject" 
+PRINT(".\Listings\dcmotorproject.m51")
