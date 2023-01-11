@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.0.0   DCPROG                                                            01/03/2023 13:02:38 PAGE 1   
+C51 COMPILER V9.60.0.0   DCPROG                                                            01/11/2023 22:36:37 PAGE 1   
 
 
 C51 COMPILER V9.60.0.0, COMPILATION OF MODULE DCPROG
@@ -9,29 +9,28 @@ COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE dcprog.c OPTIMIZE(8,SPEED) BROWS
 line level    source
 
    1          #include<reg51.h>
-   2          sbit motp=P1^0;
-   3          sbit motn=P1^1;
+   2          sbit motp1=P1^0;
+   3          sbit motn1=P1^1;
    4          
    5          sbit motp2=P1^2;
    6          sbit motn2=P1^3;
    7          
    8          void main(){
    9   1        unsigned int i;
-  10   1        motn=motp=motp2=motn2=0;
-  11   1      
-  12   1        while(1){
-  13   2          motp=1;
-  14   2          motn=0;
-  15   2          motp2=0;
-  16   2          motn2=1;
-  17   2          for(i=0; i<50000; i++){}
-  18   2          motp=0;
-  19   2          motn=1;
-  20   2          motp2=1;
-  21   2          motn2=0;
-  22   2          for(i=0; i<50000; i++){}  
-  23   2        }
-  24   1      }
+  10   1        motn1=motp1=motp2=motn2=0;
+  11   1        while(1){
+  12   2          motp1=1;
+  13   2          motn1=0;
+  14   2          motp2=0;
+  15   2          motn2=1;
+  16   2          for(i=0; i<50000; i++){}
+  17   2          motp1=0;
+  18   2          motn1=1;
+  19   2          motp2=1;
+  20   2          motn2=0;
+  21   2          for(i=0; i<50000; i++){}  
+  22   2        }
+  23   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
