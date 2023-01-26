@@ -10,7 +10,7 @@ void lcddata(unsigned char);
 void delay();
 
 int j;
-char full_name[] = "sgsdjgMOTALIB PATHAN - 2019000010081";
+char full_name[] = "MOTALIB PATHAN - 2019000010081";
 char department[] = "CSE - SOUTHEAST UNIVERSITY";
 
 void main(){

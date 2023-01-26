@@ -1,4 +1,5 @@
 ".\Objects\STARTUP.obj",
-".\Objects\lcddisplay.obj" 
+".\Objects\lcddisplay.obj",
+".\Objects\alfaz.obj" 
 TO ".\Objects\lcd-display-project" 
 PRINT(".\Listings\lcd-display-project.m51")

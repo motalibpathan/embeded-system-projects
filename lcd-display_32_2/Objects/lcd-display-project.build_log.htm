@@ -18,15 +18,54 @@ Hex Converter:   OH51.exe V2.7.0.0
 CPU DLL:         S8051.DLL V3.122.0.0
 Dialog DLL:      DP51.DLL V2.67.0.0 
 <h2>Project:</h2>
-D:\1 SEU Class\10. Fall 2022\PLC\lcd-display_32_2\lcd-display-project.uvproj
-Project File Date:  01/07/2023
+D:\1 SEU Class\10. Fall 2022\PLC\embeded sytem projects on GIT\lcd-display_32_2\lcd-display-project.uvproj
+Project File Date:  01/12/2023
 
 <h2>Output:</h2>
 Build target 'Target 1'
 linking...
-Program Size: data=69.0 xdata=0 code=431
-creating hex file from ".\Objects\lcd-display-project"...
-".\Objects\lcd-display-project" - 0 Error(s), 0 Warning(s).
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  J
+    MODULE:  .\Objects\alfaz.obj (ALFAZ)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  DEPARTMENT
+    MODULE:  .\Objects\alfaz.obj (ALFAZ)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  FULL_NAME
+    MODULE:  .\Objects\alfaz.obj (ALFAZ)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  DELAY
+    MODULE:  .\Objects\alfaz.obj (ALFAZ)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _LCDDATA
+    MODULE:  .\Objects\alfaz.obj (ALFAZ)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  _LCDCMD
+    MODULE:  .\Objects\alfaz.obj (ALFAZ)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  .\Objects\alfaz.obj (ALFAZ)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?ALFAZ
+*** ERROR L107: ADDRESS SPACE OVERFLOW
+    SPACE:   DATA    
+    SEGMENT: ?DT?ALFAZ
+    LENGTH:  003CH
+*** ERROR L105: PUBLIC REFERS TO IGNORED SEGMENT
+    SYMBOL:  J
+    SEGMENT: ?DT?ALFAZ
+*** ERROR L105: PUBLIC REFERS TO IGNORED SEGMENT
+    SYMBOL:  DEPARTMENT
+    SEGMENT: ?DT?ALFAZ
+*** ERROR L105: PUBLIC REFERS TO IGNORED SEGMENT
+    SYMBOL:  FULL_NAME
+    SEGMENT: ?DT?ALFAZ
+*** ERROR L118: REFERENCE MADE TO ERRONEOUS EXTERNAL
+    SYMBOL:  MAIN
+    MODULE:  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+    ADDRESS: 080DH
+Program Size: data=135.0 xdata=0 code=679
+Target not created.
 Build Time Elapsed:  00:00:00
 </pre>
 </body>
